@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="jQueryMeth2.css">
     <script src="queryCDN.js"></script>
-    <title>Stuff for Magib</title>
+    <title class="modif">Stuff for Magib</title>
 </head>
 <body>
-<p>On y va?</p>
-<p>On y va?</p>
-<p>On y va?</p>
+<p class="modif">On va changer</p>
+<p>Moi pas mais mes frères et la titre de la page vont changer</p>
+<p class="modif">On va changer</p>
+<p>Moi aussi, je reste comme je suis</p>
 
 
 <button>Changer des Choses</button>
@@ -20,12 +21,8 @@
 $(document).ready(function(){
 
     $("button").click(function(){
-        $('p').replaceWith("<div>Div insérée</div>");
-        $('h1').after("<p>Ajouté après titre</p>");
-
-        setTimeout(() => {
-            $("div").prepend("<span>Préfixe :</span>")
-        }, 500);
+        $('.modif').text("Texte modifié");
+        
     });
 
 
