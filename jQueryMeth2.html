@@ -8,19 +8,30 @@
     <title>Stuff for Magib</title>
 </head>
 <body>
-<p id="remplacer">Je vais changer</p>
-
-
-
-<button>Changer des Choses</button>
+    <h1>Hi again</h1>
+    <p class="supprimer">Je vais partir</p>
+    <span class="supprimer">Moi Aussi</span>
+    <div>J'imagine que moi aussi, alors</div>
+    <br><br>
+<button class="supprimer">Changer des Choses</button>
 
 
     <script>
 $(document).ready(function(){
 
     $("button").click(function(){
-        $('#remplacer').replaceWith("<span>Elément remplacé</span>");
-        
+        $('.supprimer').remove();
+        setTimeout(() => {
+            $("div").text("Apparement, je reste ici");
+        }, 500);
+        setTimeout(() => {
+            $("div").text("Qu'est-ce que m'arrive???");
+            $("div").fadeOut(2000);
+        }, 1500);
+        setTimeout(() => {
+            
+            $("h1").text("Voilà, 30 minutes de travail. À lundi");
+        }, 2500);
     });
 
 
