@@ -9,20 +9,26 @@
 </head>
 <body>
     <h1>Hi There</h1>
-    <h4>J'ai mis des borders autours les divs vides juste pour montrer leurs existance</h4>
-<div style="border: 2px solid black; margin: 10px; height: 10px;"></div>
-<div style="border: 2px solid black; margin: 10px; height: 10px;"></div>
+<ul>
+    <li>Nous restons ici</li>
+    <li class="supprimer">Nous allons bientôt disparaitre</li>
+    <li>Nous restons ici</li>
+    <li class="supprimer">Nous allons bientôt disparaitre</li>
+    <li>Nous restons ici</li>
+    <li class="supprimer">Nous allons bientôt disparaitre</li>
+    <li>Nous restons ici</li>
+    <li class="supprimer">Nous allons bientôt disparaitre</li>
+</ul>
 
 
-<button>Remplace avec des paragraph</button>
+<button>Supprime quelques LI</button>
 
 
     <script>
 $(document).ready(function(){
 
     $("button").click(function(){
-        $('h4').text('Les Divs sont partis. Voir console si tu veux');
-        $("div").replaceWith("<p>Nous sommes des paragraphs</p>")
+        $('.supprimer').remove();
     });
 
 
