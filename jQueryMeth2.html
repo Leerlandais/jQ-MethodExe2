@@ -9,26 +9,19 @@
 </head>
 <body>
     <h1>Hi There</h1>
-<ul>
-    <li>Nous restons ici</li>
-    <li class="supprimer">Nous allons bientôt disparaitre</li>
-    <li>Nous restons ici</li>
-    <li class="supprimer">Nous allons bientôt disparaitre</li>
-    <li>Nous restons ici</li>
-    <li class="supprimer">Nous allons bientôt disparaitre</li>
-    <li>Nous restons ici</li>
-    <li class="supprimer">Nous allons bientôt disparaitre</li>
-</ul>
+<h2>Je suis un H2</h2>
+<h2>Je suis un H2</h2>
+<h2>Je suis un H2</h2>
 
 
-<button>Supprime quelques LI</button>
+<button>Ajouter des Paragraphs</button>
 
 
     <script>
 $(document).ready(function(){
 
     $("button").click(function(){
-        $('.supprimer').remove();
+        $('h2').add("<p>hello</p>");
     });
 
 
