@@ -9,19 +9,19 @@
 </head>
 <body>
     <h1>Hi There</h1>
-<div>Je suis un div</div>
-<div>Je suis un div</div>
-<div>Je suis un div</div>
+    <h1>Pas bien d'avoir plusieurs H1</h1>
+    <h1>Mais nous sommes ici quand même</h1>
 
 
-<button>Ajouter des prefix</button>
+<button>Changer des Choses</button>
 
 
     <script>
 $(document).ready(function(){
 
     $("button").click(function(){
-        $('div').prepend("<span>Préfixe : </span>");
+        $('h1').text("Titre modifié");
+        $('h1').after("<p>Ajouté après titre</p>");
     });
 
 
