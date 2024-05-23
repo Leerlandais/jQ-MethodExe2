@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="jQueryMeth2.css">
     <script src="queryCDN.js"></script>
-    <title class="modif">Stuff for Magib</title>
+    <title>Stuff for Magib</title>
 </head>
 <body>
-<p class="modif">On va changer</p>
-<p>Moi pas mais mes frères et la titre de la page vont changer</p>
-<p class="modif">On va changer</p>
-<p>Moi aussi, je reste comme je suis</p>
+<p id="remplacer">Je vais changer</p>
+
 
 
 <button>Changer des Choses</button>
@@ -21,7 +19,7 @@
 $(document).ready(function(){
 
     $("button").click(function(){
-        $('.modif').text("Texte modifié");
+        $('#remplacer').replaceWith("<span>Elément remplacé</span>");
         
     });
 
