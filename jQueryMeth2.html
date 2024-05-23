@@ -8,9 +8,9 @@
     <title>Stuff for Magib</title>
 </head>
 <body>
-    <h1>Hi There</h1>
-    <h1>Pas bien d'avoir plusieurs H1</h1>
-    <h1>Mais nous sommes ici quand même</h1>
+<p>On y va?</p>
+<p>On y va?</p>
+<p>On y va?</p>
 
 
 <button>Changer des Choses</button>
@@ -20,8 +20,12 @@
 $(document).ready(function(){
 
     $("button").click(function(){
-        $('h1').text("Titre modifié");
+        $('p').replaceWith("<div>Div insérée</div>");
         $('h1').after("<p>Ajouté après titre</p>");
+
+        setTimeout(() => {
+            $("div").prepend("<span>Préfixe :</span>")
+        }, 500);
     });
 
 
